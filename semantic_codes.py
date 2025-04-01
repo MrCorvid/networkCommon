@@ -230,6 +230,7 @@ ENTITY_COMPARATOR = 5
 ENTITY_PREDICTOR = 6
 ENTITY_MEMORY_BUFFER = 7
 ENTITY_NOVELTY_MODULE = 8
+ENTITY_AGENT_OUTPUT = 9 # Added for resolving final agent outputs
 
 # --- Plasticity Modulation Effects ---
 PLASTICITY_MOD_MULTIPLICATIVE = 0

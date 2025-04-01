@@ -7,14 +7,12 @@ Defines the shared network object classes used by interpreter and compiler.
 
 from typing import Dict, List, Any, Set, Tuple, Optional
 
-# Import LoggingManager from its future location in networkCommon
-# If LoggingManager hasn't been moved yet, this will cause a temporary error,
-# but it will be correct after the next step.
-# from .logging_manager import LoggingManager
-# logger = LoggingManager.get_logger("NetworkDefinition")
-# Temporarily disable logger usage until LoggingManager is moved and import confirmed
-import logging
-logger = logging.getLogger("NetworkDefinition_Common") # Placeholder logger
+# Import LoggingManager from the same directory
+from .logging_manager import LoggingManager, VERBOSE_LEVEL_NUM # Corrected import
+
+# Get logger instance
+logger = LoggingManager.get_logger("Common.NetworkDefinition") # Updated logger name
+
 
 class NetworkDefinitionObj:
     """Final, structured representation of the interpreted network."""
